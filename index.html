@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">  
+    <title>Responsive Navbar</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-logo" href="https://github.com/dpihovych">Videodima</a>
+    </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <nav class="menu">
+      <a href="https://dpihovych.github.io/index.html" style="animation-delay: 0.1s">Home</a>
+        <a href="https://dpihovych.github.io/programs.html" style="animation-delay: 0.2s">Programs</a>
+        <a href="https://dpihovych.github.io/contact.html" style="animation-delay: 0.3s">Contact</a>
+    </nav>
+
+    <script type="text/javascript">
+      const toggleMenu = () => {
+        document.body.classList.toggle("open");
+      };
+    </script>
+        <div class="text">
+          <p>Hi! I'm Dima! This is my site, where i will post my projects on Python.</p>
+          <p>If you wanna know my contats, click <a href='/contact.html'>here</a>.</p>
+          <p>I'm also very like coding. Click this to see my here <a href='https://github.com/dpihovych'>GitHub</a>.</p>
+        </div>
+  </body>
+</html>
